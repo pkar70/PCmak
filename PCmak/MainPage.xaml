@@ -1,0 +1,120 @@
+﻿<Page
+    x:Class="PCmak.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PCmak"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="uiGridLoaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="330" />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer x:Name="uiScroll" Grid.Column="1" Height="Auto" HorizontalScrollMode="Disabled" >
+            <Grid Width="330">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="110"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                </Grid.RowDefinitions>
+                <ToggleSwitch x:Name="uiShift1" OnContent="SHIFT" OffContent="Shift" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Background="GreenYellow"  />
+                <Button x:Name="uiButton1B" Content="power" Grid.Column="2" Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,30,20,30" Background="Red" />
+
+                <Button x:Name="uiButton01" Content="1/Home" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton02" Content="á" Grid.Column="1" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton03" Content="3/PgUp" Grid.Column="2" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+
+                <Button x:Name="uiButton04" Content="ß" Grid.Column="0" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton05" Content="Ã" Grid.Column="1" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton06" Content="à" Grid.Column="2" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+
+                <Button x:Name="uiButton07" Content="7/End" Grid.Column="0" Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton08" Content="â" Grid.Column="1" Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton09" Content="9/PgDn" Grid.Column="2" Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+
+                <Button x:Name="uiButton0B" Content="TAB" Grid.Column="0" Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton0A" Content="0" Grid.Column="1" Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton0C" Content="ESC" Grid.Column="2" Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+
+                <Button x:Name="uiButton0D" Content="Alt" Grid.Column="0" Grid.Row="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton0E" Content="Prop" Grid.Column="1" Grid.Row="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton0F" Content="Txt" Grid.Column="2" Grid.Row="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+
+                <ToggleSwitch x:Name="uiShift2" OnContent="SHIFT" OffContent="Shift" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center" Background="GreenYellow" />
+
+                <Button x:Name="uiButton19" Content="8" Grid.Column="0" Grid.Row="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton1A" Content="8" Grid.Column="2" Grid.Row="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateX="2" Rotation="180"/>
+                    </Button.RenderTransform>
+                </Button>
+
+                <Button x:Name="uiButton17" Content="õ" Grid.Column="0" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton10" Content="ñ" Grid.Column="1" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton11" Content="ö" Grid.Column="2" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+
+                <Button x:Name="uiButton16" Content="ï" Grid.Column="0" Grid.Row="9" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton18" Content="x" Grid.Column="1" Grid.Row="9" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton12" Content="ð" Grid.Column="2" Grid.Row="9" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+
+                <Button x:Name="uiButton15" Content="÷" Grid.Column="0" Grid.Row="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton14" Content="ò" Grid.Column="1" Grid.Row="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+                <Button x:Name="uiButton13" Content="ø" Grid.Column="2" Grid.Row="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Wingdings"/>
+
+                <ToggleSwitch x:Name="uiShift3" OnContent="SHIFT" OffContent="Shift" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="11" HorizontalAlignment="Center" Background="GreenYellow" />
+
+                <Grid Grid.Row="12" Grid.ColumnSpan="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="uiButton1C" Content="A" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,20,15,20" Background="Red" />
+                    <Button x:Name="uiButton1D" Content="B" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="15,20,15,20" Background="Green" />
+                    <Button x:Name="uiButton1E" Content="C" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="15,20,15,20" Background="Yellow" />
+                    <Button x:Name="uiButton1F" Content="D" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="15,20,20,20" Background="Blue" />
+                </Grid>
+                
+                <Button x:Name="uiButton20" Content="volUP" Grid.Column="0" Grid.Row="13" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton21" Content="Mute" Grid.Column="1" Grid.Row="13" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+                <Button x:Name="uiButton22" Content="volDWN" Grid.Column="2" Grid.Row="13" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15"/>
+
+                <Button x:Name="uiButton24" Content="4" Grid.Column="1" Grid.Row="14" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Webdings"/>
+
+                <Button x:Name="uiButton26" Content="9" Grid.Column="0" Grid.Row="15" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Webdings"/>
+                <Button x:Name="uiButton27" Content=";" Grid.Column="1" Grid.Row="15" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Webdings"/>
+                <Button x:Name="uiButton28" Content=":" Grid.Column="2" Grid.Row="15" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Webdings"/>
+
+                <Button x:Name="uiButton29" Content="7" Grid.Column="0" Grid.Row="16" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Webdings"/>
+                <Button x:Name="uiButton2A" Content="&lt;" Grid.Column="1" Grid.Row="16" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Webdings"/>
+                <Button x:Name="uiButton2B" Content="8" Grid.Column="2" Grid.Row="16" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20,15,20,15" FontFamily="Webdings" />
+
+            </Grid>
+        </ScrollViewer>
+        <MediaElement x:Name="uiGrajek"  />
+    </Grid>
+</Page>
